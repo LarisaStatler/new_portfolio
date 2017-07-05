@@ -665,6 +665,31 @@ animation-duration: 750ms;
 .socIcon:hover{
 color:#fff;
 }
+
+.contacts_info_item, .contacts_info_item .fa, .contacts_info_item a {
+    -webkit-transition: transform 0.9s ease 0s;
+    -moz-transition: transform 0.9s ease 0s;
+    -o-transition: transform 0.9s ease 0s;
+    transition: transform 0.9s ease 0s;
+}
+
+.contacts_info_item:hover{
+   color: #f24971;
+
+}
+
+.contacts_info_item:hover .fa{
+    border-color: #f24971;
+    transform: rotate(360deg);
+}
+
+.contacts_info_item:hover a{
+    color: #f24971;
+}
+
+
+
+
 /* ========================================== modal ======================================================= */
 body.modal-open{
 margin-right: 0px !important;
@@ -710,6 +735,7 @@ margin-right: 0px !important;
     margin-top: 50px;
     font-size: 20px;
     line-height: 36px;
+    text-decoration: none;
 
 }
 
