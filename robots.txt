@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /mail.php
+Host: lora.zzz.com.ua
+Sitemap: http://lora.zzz.com.ua/new_portfolio/sitemap.xml
