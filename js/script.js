@@ -203,7 +203,7 @@ jQuery(document).ready(function ($) {
     $("body").on("submit", ".check_form", function (e) {
         e.preventDefault();
         e.stopPropagation();
-        var word = $(".field").val();
+        var word = $(".field_popup").val();
         if (palindrom(word)) alert ("It's palindrom!!!");
         else alert ("It's not palindrom!!!");
     });
@@ -213,7 +213,15 @@ jQuery(document).ready(function ($) {
         $(".palindrom_popup").hide(100);
     });
 
-
+    if (window.outerHeight > 700){
+        $('#fullpage').fullpage({
+            scrollBar: true,
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+            mouseWheel: true
+        });
+    }
 
 
 });
